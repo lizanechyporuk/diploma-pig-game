@@ -1,0 +1,41 @@
+@use "/src/styles/variables.scss";
+@use "/src/styles/mixins//fonts-mixins" as fonts;
+@use "/src/styles/mixins/breakpoints-mixins" as breakpoints;
+
+.header {
+  padding: 10px 20px;
+  background: var(--black-bg-op-20);
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  z-index: 1;
+
+  @include breakpoints.for-md-screen {
+    flex-direction: column;
+  }
+
+  .image {
+    height: 80px;
+
+    @include breakpoints.for-md-screen {
+      height: auto;
+    }
+  }
+
+  .heading {
+    @include fonts.heading-small;
+
+    @include breakpoints.for-md-screen {
+      @include fonts.heading;
+    }
+
+    @include breakpoints.for-xl-screen {
+      @include fonts.heading-big;
+    }
+  }
+}

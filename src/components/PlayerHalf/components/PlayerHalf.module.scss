@@ -1,0 +1,122 @@
+@use "/src/styles/variables.scss";
+@use "/src/styles/mixins//fonts-mixins" as fonts;
+@use "/src/styles/mixins/breakpoints-mixins" as breakpoints;
+
+.player {
+  flex: 50%;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+
+  @include breakpoints.for-xl-screen {
+    padding: 120px 90px;
+  }
+
+  .name {
+    @include fonts.headline3-light;
+    position: relative;
+    margin-bottom: 5px;
+
+    @include breakpoints.for-md-screen {
+      @include fonts.headline2-light;
+      margin-bottom: 10px;
+    }
+
+    @include breakpoints.for-xl-screen {
+      @include fonts.headline1-light;
+      margin-bottom: 20px;
+    }
+  }
+
+  .score {
+    @include fonts.paragraph-70-pink-light;
+    margin-bottom: auto;
+
+    @include breakpoints.for-md-screen {
+      @include fonts.paragraph-80-pink-light;
+    }
+
+    @include breakpoints.for-xl-screen {
+      @include fonts.paragraph-90-pink-light;
+    }
+  }
+
+  .current {
+    background-color: var(--primary-text-color);
+    opacity: 0.8;
+    border-radius: 9px;
+    color: var(--white);
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.75s;
+
+    @include breakpoints.for-md-screen {
+      width: 65%;
+    }
+
+    .current__label {
+      @include fonts.paragraph-17-light;
+      margin-bottom: 10px;
+
+      @include breakpoints.for-xl-screen {
+        @include fonts.paragraph-22-light;
+        margin-bottom: 20px;
+      }
+    }
+
+    .current__score {
+      @include fonts.paragraph-35-white;
+
+      @include breakpoints.for-xl-screen {
+        @include fonts.paragraph-45-white;
+      }
+    }
+  }
+
+  &.player__active {
+    background-color: var(--white-bg-op-40);
+
+    .name {
+      @include fonts.headline3-bold;
+
+      @include breakpoints.for-md-screen {
+        @include fonts.headline2-bold;
+      }
+
+      @include breakpoints.for-xl-screen {
+        @include fonts.headline1-bold;
+      }
+    }
+
+    .score {
+      @include fonts.paragraph-70-pink;
+
+      @include breakpoints.for-md-screen {
+        @include fonts.paragraph-80-pink;
+      }
+
+      @include breakpoints.for-xl-screen {
+        @include fonts.paragraph-90-pink;
+      }
+    }
+
+    .current {
+      opacity: 1;
+    }
+  }
+
+  &.player__winner {
+    background-color: var(--dark-bg-color);
+
+    .name {
+      @include fonts.headline2-pink-bold;
+
+      @include breakpoints.for-xl-screen {
+        @include fonts.headline1-pink-bold;
+      }
+    }
+  }
+}

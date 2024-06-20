@@ -1,0 +1,17 @@
+@use "/src/styles/variables.scss";
+
+.home__page {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  min-width: 340px;
+  background-image: linear-gradient(
+    to top left,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

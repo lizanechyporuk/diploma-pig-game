@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  /* --- COLORS --- */
+  --black: #000;
+  --white: #fff;
+
+  /* Surface colors */
+  --primary-color: #bf2e34;
+  --secondary-color: #753682;
+  --dark-bg-color: #2f2f2f;
+  --white-bg-op-35: rgba(255, 255, 255, 0.35);
+  --white-bg-op-40: rgba(255, 255, 255, 0.4);
+  --white-bg-op-60: rgba(255, 255, 255, 0.6);
+  --black-bg-op-10: rgba(0, 0, 0, 0.1);
+  --black-bg-op-15: rgba(0, 0, 0, 0.15);
+  --black-bg-op-20: rgba(0, 0, 0, 0.2);
+  --black-bg-op-25: rgba(0, 0, 0, 0.25);
+
+  /* Text colors */
+  --dark-text-color: #333;
+  --dark-lighter-text-color: #444;
+  --light-text-color: #ddd;
+  --primary-text-color: #c7365f;
+
+  /* FONTS */
+  /* Font family */
+  --font-family: "Nunito", sans-serif;
+
+  /* Font weight */
+  --light: 300;
+  --normal: 400;
+  --bold: 700;
+
+  /* Font size */
+  --font-size-12: 12px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-25: 25px;
+  --font-size-30: 30px;
+  --font-size-35: 35px;
+  --font-size-45: 45px;
+  --font-size-40: 40px;
+  --font-size-55: 55px;
+  --font-size-70: 70px;
+  --font-size-80: 80px;
+  --font-size-90: 90px;
+}
+
+html {
+  box-sizing: border-box;
+  min-width: 340px;
+}
+
+body {
+  font-family: var(--font-family);
+}

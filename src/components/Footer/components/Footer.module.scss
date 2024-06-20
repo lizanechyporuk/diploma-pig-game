@@ -1,0 +1,17 @@
+@use "/src/styles/variables.scss";
+@use "/src/styles/mixins//fonts-mixins" as fonts;
+@use "/src/styles/mixins/breakpoints-mixins" as breakpoints;
+
+.footer {
+  @include fonts.paragraph-16-light;
+  position: absolute;
+  bottom: 0;
+
+  @include breakpoints.for-md-screen {
+    @include fonts.paragraph-20-light;
+  }
+
+  @include breakpoints.for-xl-screen {
+    @include fonts.paragraph-25-light;
+  }
+}

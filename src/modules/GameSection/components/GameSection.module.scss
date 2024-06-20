@@ -1,0 +1,28 @@
+@use "/src/styles/variables.scss";
+@use "/src/styles/mixins/breakpoints-mixins" as breakpoints;
+
+.game__section {
+  position: relative;
+  background-color: var(--white-bg-op-35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 30px 50px var(--black-bg-op-25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoints.for-md-screen {
+    flex-direction: row;
+  }
+
+  @include breakpoints.for-lg-screen {
+    width: 1000px;
+    height: 600px;
+  }
+
+  @include breakpoints.for-xl-screen {
+    width: 1300px;
+    height: 700px;
+  }
+}

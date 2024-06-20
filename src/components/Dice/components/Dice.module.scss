@@ -1,0 +1,25 @@
+@use "/src/styles/variables.scss";
+@use "/src/styles/mixins/breakpoints-mixins" as breakpoints;
+
+.dice {
+  top: 45%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+  box-shadow: 0 20px 50px var(--black-bg-op-20);
+
+  @include breakpoints.for-md-screen {
+    top: 120px;
+  }
+
+  @include breakpoints.for-lg-screen {
+    top: 150px;
+    height: 120px;
+  }
+
+  @include breakpoints.for-xl-screen {
+    top: 220px;
+    height: 140px;
+  }
+}

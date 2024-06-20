@@ -1,0 +1,209 @@
+@use "../variables.scss";
+
+/* Headlines */
+
+@mixin heading-big {
+  font-size: var(--font-size-70);
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+@mixin heading {
+  font-size: var(--font-size-40);
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+@mixin heading-small {
+  font-size: var(--font-size-30);
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+@mixin headline1-bold {
+  font-size: var(--font-size-55);
+  font-weight: var(--bold);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--dark-text-color);
+}
+
+@mixin headline1-pink-bold {
+  font-size: var(--font-size-55);
+  font-weight: var(--bold);
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
+
+@mixin headline1-light {
+  font-size: var(--font-size-55);
+  font-weight: var(--light);
+  word-wrap: break-word;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--dark-text-color);
+}
+
+@mixin headline2-bold {
+  font-size: var(--font-size-40);
+  font-weight: var(--bold);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--dark-text-color);
+}
+
+@mixin headline2-pink-bold {
+  font-size: var(--font-size-40);
+  font-weight: var(--bold);
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
+
+@mixin headline2-light {
+  font-size: var(--font-size-40);
+  font-weight: var(--light);
+  word-wrap: break-word;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--dark-text-color);
+}
+
+@mixin headline3-bold {
+  font-size: var(--font-size-30);
+  font-weight: var(--bold);
+  word-wrap: break-word;
+  color: var(--dark-text-color);
+}
+
+@mixin headline3-light {
+  font-size: var(--font-size-30);
+  font-weight: var(--light);
+  word-wrap: break-word;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--dark-text-color);
+}
+
+/* Paragraphs */
+@mixin paragraph-12-dark-lighter {
+  font-size: var(--font-size-12);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--dark-lighter-text-color);
+}
+
+@mixin paragraph-16-light {
+  font-size: var(--font-size-16);
+  font-weight: var(--normal);
+  text-wrap: nowrap;
+  color: var(--light-text-color);
+}
+
+@mixin paragraph-17-light {
+  font-size: var(--font-size-17);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+@mixin paragraph-18-dark-lighter {
+  font-size: var(--font-size-18);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--dark-lighter-text-color);
+}
+
+@mixin paragraph-20-light {
+  font-size: var(--font-size-20);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  color: var(--light-text-color);
+}
+
+@mixin paragraph-22-light {
+  font-size: var(--font-size-22);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+@mixin paragraph-22-dark-lighter {
+  font-size: var(--font-size-22);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--dark-lighter-text-color);
+}
+
+@mixin paragraph-25-light {
+  font-size: var(--font-size-25);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  color: var(--light-text-color);
+}
+
+@mixin paragraph-35-white {
+  font-size: var(--font-size-35);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  color: var(--white);
+}
+
+@mixin paragraph-45-white {
+  font-size: var(--font-size-45);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  color: var(--white);
+}
+
+@mixin paragraph-70-pink {
+  font-size: var(--font-size-70);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
+
+@mixin paragraph-70-pink-light {
+  font-size: var(--font-size-70);
+  font-weight: var(--light);
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
+
+@mixin paragraph-80-pink {
+  font-size: var(--font-size-80);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
+
+@mixin paragraph-80-pink-light {
+  font-size: var(--font-size-80);
+  font-weight: var(--light);
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
+
+@mixin paragraph-90-pink {
+  font-size: var(--font-size-90);
+  font-weight: var(--normal);
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
+
+@mixin paragraph-90-pink-light {
+  font-size: var(--font-size-90);
+  font-weight: var(--light);
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
