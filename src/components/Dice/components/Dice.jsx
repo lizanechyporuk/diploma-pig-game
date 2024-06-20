@@ -5,7 +5,7 @@ function Dice({ dice }) {
 
   return (
     <img
-      src={`/img/Dice/dice-${dice}.png`}
+      src={`${process.env.PUBLIC_URL}/img/Dice/dice-${dice}.png`}
       alt="Playing dice"
       className={styles.dice}
     />
