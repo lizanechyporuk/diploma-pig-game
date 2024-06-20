@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/diploma-pig-game/static/css/main.8f446135.css",
+    "main.js": "/diploma-pig-game/static/js/main.5a63eb12.js",
+    "index.html": "/diploma-pig-game/index.html",
+    "main.8f446135.css.map": "/diploma-pig-game/static/css/main.8f446135.css.map",
+    "main.5a63eb12.js.map": "/diploma-pig-game/static/js/main.5a63eb12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f446135.css",
+    "static/js/main.5a63eb12.js"
+  ]
+}
